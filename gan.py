@@ -17,11 +17,7 @@ from keras import initializers
 from urllib.request import Request, urlopen
 from time import sleep
 import numpy as np
-
-from Crypto.PublicKey import RSA
-
 base_url = "https://www.random.org/integers/?num=1&min={0}&max={1}&col=1&base=10&format=plain&rnd=new"
-K.set_image_dim_ordering('th')
 
 
 # Was actually going to use Random.org's guassian generator for noise generation but figured that due to 
@@ -158,5 +154,5 @@ def train(epochs=1, batchSize=128):
     # Plot losses from every epoch
     plotLoss(e)
 
-if __name__ == '__main__':
+def run_gan():
     train(200, 128)
