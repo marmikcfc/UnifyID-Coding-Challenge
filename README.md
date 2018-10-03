@@ -18,6 +18,12 @@ This challenge is programming language agnostic! Pick whichever language you're 
 3. Push your code and one of the 3 requirements on github on your own public repo. Send us an email back at jobs@unify.id with your repo URL. You have 3 hours and we'll check your time on whatever is earliest, the timestamp on your last commit or your email reply back. Have fun with randomness!
 
 
+## Running
+	``` pip install -r requirements.txt
+	```
+	```python main_entry_point.py rsa|image
+	```
 ## Implemented:
 1. Image generation: Using vanilla GAN on MNIST dataset. 
 2. RSA key pair generation.
+
